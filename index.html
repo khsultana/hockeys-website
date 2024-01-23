@@ -1,193 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockeys Website</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
- </head>
-<body class="container mx-auto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body class="container mx-auto">
     <header class="mt-10">
-<!-- Navbar Section -->
-<nav>
-    <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      <!-- Navbar Section -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contacts</a></li>
+              </ul>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
-              <li><a>Home</a></li>
+            <a class="btn btn-ghost font-extrabold text-4xl">Hockey’s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-base">
+              <li><a class="text-[#FF4240]">Home</a></li>
               <li><a>About</a></li>
               <li><a>Pages</a></li>
               <li><a>Blog</a></li>
               <li><a>Contacts</a></li>
-             </ul>
+            </ul>
           </div>
-          <a class="btn btn-ghost font-extrabold text-4xl">Hockey’s</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-base">
-            <li><a class="text-[#FF4240]">Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Pages</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contacts</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
+          <div class="navbar-end">
             <button class="btn btn-ghost btn-circle invisible lg:visible">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-              </button>
-          <a class="btn bg-[#FF4240] text-white text-lg">Get Ticket</a>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+            <a class="btn bg-[#FF4240] text-white text-lg">Get Ticket</a>
+          </div>
         </div>
-      </div>
-</nav>
+      </nav>
 
-<!-- Banner Section Start -->
-<div class="container mx-auto p-2">
-    <div class="carousel w-full lg:h-[620px] mt-10">
-        <div id="slide1" class="carousel-item relative w-full">
-          <img src="Images/1.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle">❮</a> 
-            <a href="#slide2" class="btn btn-circle">❯</a>
+      <!-- Banner Section Start -->
+      <div class="container mx-auto p-2">
+        <div class="carousel w-full lg:h-[620px] mt-10">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
           </div>
-        </div> 
-        <div id="slide2" class="carousel-item relative w-full">
-          <img src="Images/2.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle">❮</a> 
-            <a href="#slide3" class="btn btn-circle">❯</a>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
           </div>
-        </div> 
-        <div id="slide3" class="carousel-item relative w-full">
-          <img src="Images/3.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle">❮</a> 
-            <a href="#slide4" class="btn btn-circle">❯</a>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
           </div>
-        </div> 
-        <div id="slide4" class="carousel-item relative w-full">
-          <img src="Images/4.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" class="btn btn-circle">❮</a> 
-            <a href="#slide1" class="btn btn-circle">❯</a>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="Images/4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
           </div>
+
         </div>
-        
+        <div class="bg-black rounded-xl lg:w-1/2 p-8 space-y-2 lg:relative lg:ml-[600px] lg:-mt-52">
+          <h3 class="font-bold text-white text-xl">Meet all the heroes from the field</h3>
+          <p class="text-white text-base"> Instead of living in fear around data heroes, make some effort to learn key
+            differences between positions born and raised thanks. </p>
+        </div>
       </div>
-      <div class="bg-black rounded-xl lg:w-1/2 p-8 space-y-2 lg:relative lg:ml-[600px] lg:-mt-52">
-        <h3 class="font-bold text-white text-xl">Meet all the heroes from the field</h3>
-<p class="text-white text-base"> Instead of living in fear around data heroes, make some effort to learn key differences between positions born and raised thanks. </p>
-     </div>
-</div>
-<!-- Banner Section End -->
+      <!-- Banner Section End -->
     </header>
     <main>
-<!-- Hockey Club -->
-<section class="container mx-auto mt-24">
-   <h1 class="font-extrabold text-4xl text-center mt-6">Professional Hockeys Club</h1>
-   <p class="text-base text-center mt-6">Primary duties: Professional athletes in hockey play for professional teams. <br> They play hockey games in front of audiences and compete against other teams in their league.</p>
+      <!-- Hockey Club -->
+      <section class="container mx-auto mt-24">
+        <h1 class="font-extrabold text-4xl text-center mt-6">Professional Hockeys Club</h1>
+        <p class="text-base text-center mt-6">Primary duties: Professional athletes in hockey play for professional
+          teams. <br> They play hockey games in front of audiences and compete against other teams in their league.</p>
 
-   <div class= "flex lg:flex-row flex-col text-center mt-12 gap-5 justify-center items-center ">
-   <div class="space-y-3">
-    <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
-    <h4 class="font-semibold text-xl">Prayer Facility</h4>
-    <p>It is a dedicated space where people can go to pray and seek God.</p>
-   </div>
+        <div class="flex lg:flex-row flex-col text-center mt-12 gap-5 justify-center items-center ">
+          <div class="space-y-3">
+            <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+            <h4 class="font-semibold text-xl">Prayer Facility</h4>
+            <p>It is a dedicated space where people can go to pray and seek God.</p>
+          </div>
 
-   <div class="space-y-3">
-    <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
-    <h4 class="font-semibold text-xl">Experienced Coach</h4>
-    <p>A coach is someone who trains a person or team of people in a particular sport.</p>
-   </div>
+          <div class="space-y-3">
+            <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+            <h4 class="font-semibold text-xl">Experienced Coach</h4>
+            <p>A coach is someone who trains a person or team of people in a particular sport.</p>
+          </div>
 
-   <div class="space-y-3">
-    <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
-    <h4 class="font-semibold text-xl">Senior Player</h4>
-    <p>Senior Player means a player who has played International, provincial, or professional rugby.
-        .</p>
-   </div>
+          <div class="space-y-3">
+            <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+            <h4 class="font-semibold text-xl">Senior Player</h4>
+            <p>Senior Player means a player who has played International, provincial, or professional rugby.
+              .</p>
+          </div>
 
-   <div class="space-y-3">
-    <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
-    <h4 class="font-semibold text-xl">Training Ground</h4>
-    <p>An area where people prepare for sporting competitions, with activities primarily concentrating fitness.</p>
-   </div>
-   </div>
-</section>
-
-
-<!-- Program Section -->
-
-<section class="container mx-auto mt-24">
-    <h1 class="font-extrabold text-4xl text-center mt-6">Program Sections</h1>
-    <p class="text-base text-center mt-6">The game is divided into three periods of 20 minutes playing time each, with a 15-minute intermission between periods. <br> Hockey games may end in a tie unless the rules stipulate an overtime period to serve as a tiebreaker.
-    </p>
-
-    <!-- <div>
-<div class="flex lg:flex-row flex-col gap-7 items-center justify-center mt-12">
-    <div class="card w-[573px] image-full">
-       <img src="Images/2.png" alt="Shoes" />
-        <div class="card-body">
-          <h2 class="card-title text-2xl mt-6">Junior Program</h2>
-          <p >USA Hockey's junior program provides opportunities for players ages 16-to-20 to hone and enhance their skills organization's overall efforts related to player development.
-        </p>
-          <div class="card-actions justify-start mb-20">
-            <button class="btn bg-[#FF4240] text-white border-none ">Register Now!</button>
+          <div class="space-y-3">
+            <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+            <h4 class="font-semibold text-xl">Training Ground</h4>
+            <p>An area where people prepare for sporting competitions, with activities primarily concentrating fitness.
+            </p>
           </div>
         </div>
-      </div>
-      <div class="card w-[573px] image-full space-y-4">
-        <img src="Images/3.png" alt="Shoes" />
-         <div class="card-body">
-           <h2 class="card-title">Teenager Program</h2>
-           <p>Hockey 4 Youth is a charitable organization that provides new Canadian youth with an opportunity to play ice hockey at no cost while learning valuable life.
-         </p>
-           <div class="card-actions justify-start mb-20">
-             <button class="btn bg-[#FF4240] text-white border-none ">Register Now!</button>
-           </div>
-         </div>
-       </div>
-</div>
-<div class="flex justify-center items-center mt-4">
-    <div class="card w-[1170px] h-[450px] bg-slate-50 shadow-xl image-full">
-        <figure><img src="Images/4.png" alt="Shoes" /></figure>
-        <div class="card-body">
-            <h2 class="card-title">Teenager Program</h2>
-            <p>Hockey 4 Youth is a charitable organization that provides new Canadian youth with an opportunity to play ice hockey at no cost while learning valuable life.
-          </p>
-            <div class="card-actions justify-start">
-              <button class="btn bg-[#FF4240] text-white border-none ">Register Now!</button>
-            </div>
-        </div>
-      </div>
-</div>
-    </div> -->
-   
-<div class="flex justify-center items-center gap-5">
-    <div class="card-1 space-y-10 p-10">
-        <h2 class="card-title text-3xl text-white">Junior Program</h2>
-        <p >USA Hockey's junior program provides opportunities for players ages 16-to-20 to hone and enhance their skills organization's overall efforts related to player development.
-      </p>
-      <button class="btn bg-[#FF4240] text-white font-bold">Register Now</button>
-    </div>
-    <div class="card-2">
-        <h2 class="card-title text-2xl mt-6">Junior Program</h2>
-        <p >USA Hockey's junior program provides opportunities for players ages 16-to-20 to hone and enhance their skills organization's overall efforts related to player development.
-      </p>
-      <button class="btn bg-[#FF4240] text-white font-bold">Register Now</button>
-    </div>
-</div>
+      </section>
 
-</section>
+      <!-- Program Section -->
+
+      <section class="container mx-auto mt-24 mb-24">
+        <h1 class="font-extrabold text-4xl text-center mt-6">Program Sections</h1>
+        <p class="text-base text-center mt-6">The game is divided into three periods of 20 minutes playing time each,
+          with a 15-minute intermission between periods. <br> Hockey games may end in a tie unless the rules stipulate
+          an overtime period to serve as a tiebreaker.
+        </p>
+        <div class="flex lg:flex-row flex-col gap-7 items-center justify-center mt-12">
+          <div class="card lg:w-[573px] image-full">
+            <img src="Images/2.png" alt="Shoes" />
+            <div class="card-body space-y-8">
+              <h2 class="card-title text-2xl lg:mt-6">Junior Program</h2>
+              <p>USA Hockey's junior program provides opportunities for players ages 16-to-20 to hone and enhance their
+                skills organization's overall efforts related to player development.
+              </p>
+              <div class="card-actions justify-start lg:mb-20">
+                <button class="btn bg-[#FF4240] text-white border-none ">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <div class="card lg:w-[573px] image-full lg:space-y-4">
+            <img src="Images/3.png" alt="Shoes" />
+            <div class="card-body space-y-8">
+              <h2 class="card-title">Teenager Program</h2>
+              <p>Hockey 4 Youth is a charitable organization that provides new Canadian youth with an opportunity to
+                play ice hockey at no cost while learning valuable life.
+              </p>
+              <div class="card-actions justify-start lg:mb-20">
+                <button class="btn bg-[#FF4240] text-white border-none ">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex lg:flex-row flex-col justify-center mt-4">
+          <div class="card lg:w-[1170px] w-[500px]  lg:h-[450px] bg-slate-50 shadow-xl image-full">
+            <figure><img src="Images/4.png" alt="Shoes" /></figure>
+            <div class="card-body space-y-8 lg:mt-32">
+              <h2 class="card-title">Professional Program</h2>
+              <p class=" lg:w-1/2">Primary duties: Professional athletes in hockey play for professional teams. They
+                play hockey games in
+                front of audiences and compete against other teams in their league. To prepare for games, they spend
+                extensive amounts of time training and practising their skills
+
+              </p>
+              <div class="card-actions justify-start">
+                <button class="lg:mb-20 btn bg-[#FF4240] text-white border-none ">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Products -->
+      <section class="container mx-auto mt-36">
+        <h1 class="font-extrabold text-4xl text-center mt-6">Our New Products</h1>
+        <p class="text-base text-center mt-6">Include great pictures, nutritional information, a company story, product
+          use ideas and where shoppers can find your product. <br> Be sure to keep your “Where to Find” product
+          listing up to date. Consumers look for products that make their lives easier and interesting.
+        </p>
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-3 mt-12">
+          <!-- box 1 -->
+          <div class="border card card-side bg-base-100 shadow-xl">
+            <figure><img class="ml-4" src="Images/5.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <div class="flex gap-14">
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="text-orange-500 fa-solid fa-star"></i>
+                  <p class="mt-1">5.0</p>
+                </div>
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="fa-solid fa-eye"></i>
+                  <p class="mt-1">20</p>
+                </div>
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="mt-1">200</p>
+                </div>
+              </div>
+              <h2 class="card-title font-extrabold text-xl">World Cup Jacket</h2>
+              <p>Built with input, the World Cup Infinity Insulated <br> Jacket is a technical snow jacket that has it
+                all.</p>
+              <div class="flex gap-4">
+                <h4 class="font-bold text-[#FF4240] text-base"> Price - $22.00</h4>
+                <div class="flex gap-4 justify-center items-center">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p>Delivery Fee : Free</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- box-2  -->
+          <div class="border  card card-side bg-base-100 shadow-xl">
+            <figure><img class="ml-4" src="Images/6.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <div class="flex gap-14">
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="text-orange-500 fa-solid fa-star"></i>
+                  <p class="mt-1">5.0</p>
+                </div>
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="fa-solid fa-eye"></i>
+                  <p class="mt-1">20</p>
+                </div>
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="mt-1">200</p>
+                </div>
+              </div>
+              <h2 class="card-title font-extrabold text-xl">World Cup Flags Football</h2>
+              <p>Built with input, the World Cup Infinity Insulated <br> Jacket is a
+                technical snow jacket that has it all.</p>
+              <div class="flex gap-4">
+                <h4 class="font-bold text-[#FF4240] text-base"> Price - $22.00</h4>
+                <div class="flex gap-4 justify-center items-center">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p>Delivery Fee : Free</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- box-3  -->
+          <div class="border  card card-side bg-base-100 shadow-xl">
+            <figure><img class="ml-4" src="Images/7.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <div class="flex gap-14">
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="text-orange-500 fa-solid fa-star"></i>
+                  <p class="mt-1">5.0</p>
+                </div>
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="fa-solid fa-eye"></i>
+                  <p class="mt-1">20</p>
+                </div>
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="mt-1">200</p>
+                </div>
+              </div>
+              <h2 class="card-title font-extrabold text-xl">Cap For Hockeys</h2>
+              <p>Built with input, the World Cup Infinity Insulated <br> Jacket is a
+                technical snow jacket that has it all.</p>
+              <div class="flex gap-4">
+                <h4 class="font-bold text-[#FF4240] text-base"> Price - $22.00</h4>
+                <div class="flex gap-4 justify-center items-center">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p>Delivery Fee : Free</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- box-4  -->
+          <div class="border  card card-side bg-base-100 shadow-xl">
+            <figure><img class="ml-4" src="Images/8.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <div class="flex gap-14">
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="text-orange-500 fa-solid fa-star"></i>
+                  <p class="mt-1">5.0</p>
+                </div>
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="fa-solid fa-eye"></i>
+                  <p class="mt-1">20</p>
+                </div>
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="mt-1">200</p>
+                </div>
+              </div>
+              <h2 class="card-title font-extrabold text-xl">World Cup Jerseys</h2>
+              <p>Built with input, the World Cup Infinity Insulated <br> Jacket is a
+                technical snow jacket that has it all.</p>
+              <div class="flex gap-4">
+                <h4 class="font-bold text-[#FF4240] text-base"> Price - $22.00</h4>
+                <div class="flex gap-4 justify-center items-center">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p>Delivery Fee : Free</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- box-5  -->
+          <div class="border  card card-side bg-base-100 shadow-xl">
+            <figure><img class="ml-4" src="Images/9.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <div class="flex gap-14">
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="text-orange-500 fa-solid fa-star"></i>
+                  <p class="mt-1">5.0</p>
+                </div>
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="fa-solid fa-eye"></i>
+                  <p class="mt-1">20</p>
+                </div>
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="mt-1">200</p>
+                </div>
+              </div>
+              <h2 class="card-title font-extrabold text-xl">World Cup Helmet</h2>
+              <p>Built with input, the World Cup Infinity Insulated <br> Jacket is a
+                technical snow jacket that has it all.</p>
+              <div class="flex gap-4">
+                <h4 class="font-bold text-[#FF4240] text-base"> Price - $22.00</h4>
+                <div class="flex gap-4 justify-center items-center">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p>Delivery Fee : Free</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- box-6  -->
+          <div class="border  card card-side bg-base-100 shadow-xl">
+            <figure><img class="ml-4" src="Images/10.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <div class="flex gap-14">
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="text-orange-500 fa-solid fa-star"></i>
+                  <p class="mt-1">5.0</p>
+                </div>
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="fa-solid fa-eye"></i>
+                  <p class="mt-1">25</p>
+                </div>
+                <div class=" flex items-center justify-center gap-4">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="mt-1">400</p>
+                </div>
+              </div>
+              <h2 class="card-title font-extrabold text-xl">World Cup Flags Football</h2>
+              <p>Built with input, the World Cup Infinity Insulated <br> Jacket is a
+                technical snow jacket that has it all.</p>
+              <div class="flex gap-4">
+                <h4 class="font-bold text-[#FF4240] text-base"> Price - $22.00</h4>
+                <div class="flex gap-4 justify-center items-center">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p>Delivery Fee : Free</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </main>
     <footer>
 
     </footer>
-</body>
+  </body>
+
 </html>
