@@ -102,7 +102,7 @@
     </header>
     <main>
       <!-- Hockey Club -->
-      <section class="container mx-auto mt-24">
+      <section class="container mx-auto mt-24 lg:w-[1096px]">
         <h1 class="font-extrabold text-4xl text-center mt-6">Professional Hockeys Club</h1>
         <p class="text-base text-center mt-6">Primary duties: Professional athletes in hockey play for professional
           teams. <br> They play hockey games in front of audiences and compete against other teams in their league.</p>
@@ -137,7 +137,6 @@
       </section>
 
       <!-- Program Section -->
-
       <section class="container mx-auto mt-24 mb-24">
         <h1 class="font-extrabold text-4xl text-center mt-6">Program Sections</h1>
         <p class="text-base text-center mt-6">The game is divided into three periods of 20 minutes playing time each,
@@ -195,6 +194,8 @@
           use ideas and where shoppers can find your product. <br> Be sure to keep your “Where to Find” product
           listing up to date. Consumers look for products that make their lives easier and interesting.
         </p>
+
+        <hr class=" mx-auto mt-12">
         <div class="lg:grid lg:grid-cols-2 flex flex-col gap-3 mt-12">
           <!-- box 1 -->
           <div class="flex lg:flex-row flex-col border card card-side bg-base-100 shadow-xl">
@@ -476,7 +477,7 @@
         <p class="text-base text-center mt-6">Definitions of get in touch. verb. establish communication with someone.
           synonyms: <br> connect, touch base connect. establish a rapport or relationship.
         </p>
-        <div class="flex lg:flex-row flex-col justify-center items-center gap-5 mt-12">
+        <div class="flex lg:flex-row flex-col justify-center items-center lg:gap-20 mt-12">
           <div class="flex flex-col gap-5 lg:w-1/4 w-96">
             <div class="grid flex-grow h-32 card bg-[#e0ffae] rounded-box place-items-center">
               <img src="Images/Group 1171275317.png" alt="">
@@ -486,12 +487,12 @@
             <div class="grid flex-grow h-32 card bg-pink-200 rounded-box place-items-center">
               <img src="Images/Group 1171275318.png" alt="">
               <p>Email:</p>
-              <h4 class="font-bold">(+62) 123-321-543</h4>
+              <h4 class="font-bold">hockeys@support.com</h4>
             </div>
             <div class="grid flex-grow h-32 card bg-rose-200 rounded-box place-items-center">
               <img src="Images/Group 1171275321.png" alt="">
               <p>Location</p>
-              <h4 class="font-bold">(+62) 123-321-543</h4>
+              <h4 class="font-bold">152/1 Mohakhali Wireless Gate</h4>
             </div>
           </div>
           <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 lg:w-1/2 w-full items-center justify-center lg:p-0 p-20">
@@ -506,25 +507,25 @@
             <div>
               <label class="form-control w-full max-w-xs">
                 <div class="label">
-                  <span class="label-text">Your Name</span>
+                  <span class="label-text">Your Email</span>
                 </div>
-                <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full max-w-xs" />
+                <input type="text" placeholder="Enter Your Email" class="input input-bordered w-full max-w-xs" />
               </label>
             </div>
             <div>
               <label class="form-control w-full max-w-xs">
                 <div class="label">
-                  <span class="label-text">Your Name</span>
+                  <span class="label-text">Subject</span>
                 </div>
-                <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full max-w-xs" />
+                <input type="text" placeholder="Enter Subject" class="input input-bordered w-full max-w-xs" />
               </label>
             </div>
             <div>
               <label class="form-control w-full max-w-xs">
                 <div class="label">
-                  <span class="label-text">Your Name</span>
+                  <span class="label-text">Phone Number</span>
                 </div>
-                <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full max-w-xs" />
+                <input type="text" placeholder="Enter Your Phone Number" class="input input-bordered w-full max-w-xs" />
               </label>
             </div>
             <div class="">
@@ -552,34 +553,50 @@
         </div>
       </section>
     </main>
-    <footer class="mt-24">
-      <footer class="footer p-10 bg-neutral text-neutral-content">
+    <footer>
+      <footer class="footer p-10 bg-neutral text-neutral-content lg:W-[1440px] lg:h-[454px] lg:mt-24 mt-10 ">
         <nav>
-          <header class="footer-title">Services</header>
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
+          <header class=" lg:mt-24 footer-title text-xl font-extrabol">Get In Touch</header>
+          <p class="mt-5">If you get in touch with someone, you contact them by writing to <br> them or phoning them.
+            If you
+            are, keep, or <br>
+            stay in touch with them, you write, phone, or visit each other regularly.
+          </p>
+          <div class="mt-5 flex items-center gap-2">
+            <i class="fa-solid fa-envelope"></i>
+            <p>hockeys@support.com</p>
+          </div>
+          <div class="mt-2 flex items-center gap-2">
+            <i class="fa-solid fa-phone"></i>
+            <p>(+62) 123-321-543</p>
+          </div>
         </nav>
-        <nav>
-          <header class="footer-title">Services</header>
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
+
+        <nav class=" flex lg:flex-none flex-row gap-36">
+          <nav>
+            <header class=" lg:mt-24 footer-title">Company</header> <br>
+            <a class="link link-hover">About us </a> <br> <br>
+            <a class="link link-hover">Leadership</a> <br> <br>
+            <a class="link link-hover">Careers</a> <br> <br>
+            <a class="link link-hover">News & Article</a> <br> <br>
+            <a class="link link-hover">Legal Notice</a> <br> <br>
+          </nav>
+          <nav>
+            <header class="lg:mt-24 footer-title">Support</header> <br>
+            <a class="link link-hover">Help Center</a> <br> <br>
+            <a class="link link-hover">FAQ</a> <br> <br>
+            <a class="link link-hover">Ticket Support</a> <br> <br>
+            <a class="link link-hover">Contact Us</a> <br> <br>
+          </nav>
         </nav>
+
         <nav>
-          <header class="footer-title">Company</header>
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
-        </nav>
-        <nav>
-          <header class="footer-title">Legal</header>
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
+          <header class="lg:mt-24 footer-title space-x-10">Services</header>
+          <a class="link link-hover">Academy</a>
+          <a class="link link-hover">Group Lesson</a>
+          <a class="link link-hover">Private Lesson</a>
+          <a class="link link-hover">Hockeys for kids</a>
+          <a class="link link-hover">Hockeys for Adults</a>
         </nav>
       </footer>
     </footer>
